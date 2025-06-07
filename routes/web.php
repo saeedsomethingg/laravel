@@ -1,19 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\MemberController;
 
 Route::get('/', function () {
-    return view('books');
+    return view('books.index');
 });
 
-Route::get('/books', function () {
-    return view('books');
-})->name('books');
+Route::get('/books', [BookController::class,'index'])->name('books');
 
-Route::get('/employees', function () {
-    return view('employees');
-})->name('employees');
+Route::get('/employees',[EmployeeController::class,'index'] )->name('employees');
 
-Route::get('/members', function () {
-    return view('members');
-})->name('members');
+Route::get('/members', [MemberController::class,'index'])->name('members');
