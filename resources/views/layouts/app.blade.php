@@ -19,8 +19,8 @@
             <nav>
                 <ul class="space-y-2">
                     <li>
-                        <a href="index.html" class="text-white block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
-                            صفحه اصلی
+                        <a href="{{route('loans.index')}}" class="text-white block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                            صفحه اصلی (امانت‌ها)
                         </a>
                     </li>
                     <li>

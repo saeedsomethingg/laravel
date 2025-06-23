@@ -12,4 +12,8 @@ class Member extends Model
         'phone',
         'address'
     ];
+
+    public function loans() {
+    return $this->hasMany(Loan::class);
+    }
 }

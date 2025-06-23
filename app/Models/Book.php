@@ -12,4 +12,8 @@ class Book extends Model
         'writer',
         'available'
     ];
+
+    public function loans() {
+    return $this->hasMany(Loan::class);
+    }
 }
